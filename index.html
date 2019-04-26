@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600|Open+Sans" rel="stylesheet"> 
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+	<link rel="stylesheet" href="estilos.css">
+	<title>Prueba de formuario en popup</title>
+</head>
+<body>
+	<div class="contenedor">
+		<article>
+			<h1>sugarAPP</h1>
+			<button id="btn-abrir-popup" class="btn-abrir-popup">Registrate</button>
+			<img src="img/glucometro.jpg">
+				
+		</article>
+
+		<div class="overlay" id="overlay">
+			<div class="popup" id="popup">
+				<a href="#" id="btn-cerrar-popup" class="btn-cerrar-popup"><i class="fas fa-times"></i></a>
+				<h3>Formulario de Registro</h3>
+				<form action="">
+					<div class="contenedor-inputs">
+						<div class ="subtitulos">Datos Personales</div>
+							<input  class="inputNombre"type="text" placeholder="Nombre:">
+							<input  class="inputApellido"type="text" placeholder="Apellido:">
+							<input class="inputFechaNac" type="date">
+							<input class ="inputDire" type="text" placeholder="Dirección">
+							<input class="inputNro" type="text" placeholder="Nro.:">
+							<input class="inputPiso"type="text" placeholder="Piso:">
+							<input class="inputDepto" type="text" placeholder="Depto.:">
+							<input class="inputCP" type="text" placeholder="CP:">
+							<input class="inputCel" type="text" placeholder="Celular:">
+							<input class ="inputEmail" type="email" placeholder="Email:">
+						<div class ="subtitulos">Persona a Contactar</div>
+							<input class ="inputRel" type="text" placeholder="Relación:">
+							<input class ="inputNombre" type="text" placeholder="Nombre:">
+							<input class ="inputApellido" type="text" placeholder="Apellido:">
+							<input class="inputCel" type="text" placeholder="Celular:">
+							<input class ="inputEmail" type="email" placeholder="Email:">
+						<div class ="subtitulos">Datos de ingreso</div>
+							<input class ="inputNombreUs" type="text" placeholder="Nombre de Usuario:"><br>
+							<input class ="inputContras" type="text" placeholder="Contraseña:">
+							<input class ="inputContras2" type="text" placeholder="Reingresar contraseña:">
+					</div>
+							<input type="submit" class="btn-submit" value="Resgistrate">
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="popup.js"></script>
+</body>
+</html>
